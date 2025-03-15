@@ -1,16 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const courses = [
         { id: "WDD230", name: "Web Frontend Development", completed: true, credits: 3 },
-        { id: "WDD231", name: "Advanced CSS Techniques", completed: false, credits: 3 },
+        { id: "WDD231", name: "Web Frontend Development I", completed: false, credits: 3 },
         { id: "CSE110", name: "Introduction to Programming", completed: true, credits: 3 },
-        { id: "CSE111", name: "Object-Oriented Programming", completed: false, credits: 3 }
+        { id: "CSE111", name: "Programming with Functions", completed: true, credits: 3 }
     ];
 
     const courseContainer = document.querySelector("#course-list");
-    const allButton = document.querySelector("#all");
-    const wddButton = document.querySelector("#wdd");
-    const cseButton = document.querySelector("#cse");
-    const creditTotal = document.querySelector("#credit-total");
+    const creditTotal = document.querySelector("#total-credits");
 
     function displayCourses(filter = "all") {
         courseContainer.innerHTML = "";
@@ -29,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
             courseContainer.appendChild(courseElement);
             totalCredits += course.credits;
         });
-        creditTotal.textContent = `Total Credits: ${totalCredits}`;
+        creditTotal.textContent = totalCredits;
     }
 
-    allButton.addEventListener("click", () => displayCourses("all"));
-    wddButton.addEventListener("click", () => displayCourses("WDD"));
-    cseButton.addEventListener("click", () => displayCourses("CSE"));
+    document.querySelector("button[onclick='filterCourses(\"all\")']").addEventListener("click", () => displayCourses("all"));
+    document.querySelector("button[onclick='filterCourses(\"WDD\")']").addEventListener("click", () => displayCourses("WDD"));
+    document.querySelector("button[onclick='filterCourses(\"CSE\")']").addEventListener("click", () => displayCourses("CSE"));
 
     displayCourses(); // Initial display
 });

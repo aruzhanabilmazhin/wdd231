@@ -1,10 +1,14 @@
+/* General Page Styling */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
     display: flex;
     align-items: center;
@@ -20,43 +24,105 @@ header img {
     border-radius: 50%;
 }
 
+header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    background-color: #444;
+    padding: 0.5rem 0;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    display: block;
 }
 
-nav ul li a.active {
+nav ul li a.active,
+nav ul li a:hover {
     font-weight: bold;
-    text-decoration: underline;
+    background-color: #555;
+    border-radius: 5px;
 }
 
+/* Menu Toggle Button (Mobile) */
 #menu-toggle {
     display: none;
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
     cursor: pointer;
 }
 
-.hidden {
-    display: none;
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+h1, h2 {
+    color: #222;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Course List */
+.course {
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid #007bff;
+    background: #f8f9fa;
+}
+
+.completed {
+    border-left-color: #28a745;
+    background: #e9ffe9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         display: none;
         flex-direction: column;
+        align-items: center;
     }
 
     #menu-toggle {
@@ -65,5 +131,10 @@ nav ul li a.active {
 
     nav ul.show {
         display: flex;
+    }
+
+    main {
+        width: 90%;
+        padding: 15px;
     }
 }
