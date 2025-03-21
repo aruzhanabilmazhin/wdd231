@@ -4,7 +4,7 @@
         "address": "123 Mountain Rd, Teton, ID 83452",
         "phone": "(208) 555-1234",
         "website": "https://tetonoutdoorgear.com",
-        "image": "teton-outdoor.jpg",
+        "image": "teton-outdoor.jfif",
         "membership": "Gold"
     },
     {
@@ -20,7 +20,7 @@
         "address": "789 Finance Ave, Teton, ID 83452",
         "phone": "(208) 555-9012",
         "website": "https://summitfinance.com",
-        "image": "summit-finance.jpg",
+        "image": "summit-finance.jfif",
         "membership": "Member"
     },
     {
@@ -44,7 +44,7 @@
         "address": "303 Coverage St, Teton, ID 83452",
         "phone": "(208) 555-1122",
         "website": "https://sunvalleyinsurance.com",
-        "image": "sun-valley.jpg",
+        "image": "sun-valley.jfif",
         "membership": "Member"
     },
     {
