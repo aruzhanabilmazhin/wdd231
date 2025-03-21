@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("last-modified").textContent = document.lastModified;
+    
     const membersSection = document.getElementById("members");
     const toggleButton = document.getElementById("toggle-view");
 
@@ -7,23 +10,22 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fetch business directory data
     async function fetchMembers() {
         try {
-            const response = await fetch("data/businesses.json"); // Updated path to JSON file
+            const response = await fetch("data/businesses.json");
             const members = await response.json();
-            sessionStorage.setItem("members", JSON.stringify(members)); // Store for toggling
+            sessionStorage.setItem("members", JSON.stringify(members));
             displayMembers(members);
         } catch (error) {
             console.error("Error fetching data:", error);
         }
     }
 
-    // Display businesses in either Grid or List view
+    // Display businesses in Grid or List view
     function displayMembers(members) {
-        membersSection.innerHTML = ""; // Clear previous content
+        membersSection.innerHTML = "";
         members.forEach(member => {
             const memberCard = document.createElement("div");
             memberCard.classList.add("member-card", isGridView ? "grid-view" : "list-view");
 
-            // Add membership class for styling
             if (member.membership) {
                 memberCard.classList.add(member.membership.toLowerCase());
             }
@@ -47,8 +49,12 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleButton.addEventListener("click", () => {
         isGridView = !isGridView;
         toggleButton.textContent = isGridView ? "Switch to List View" : "Switch to Grid View";
-        displayMembers(JSON.parse(sessionStorage.getItem("members"))); // Reload data
+        displayMembers(JSON.parse(sessionStorage.getItem("members")));
     });
 
     fetchMembers();
+
+    document.getElementById("menu-button").addEventListener("click", function() {
+        document.getElementById("menu").classList.toggle("show");
+    });
 });
