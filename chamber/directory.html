@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Aruzhan Abilmazhin" />
-  <meta name="description" content="Chamber of Commerce member directory for the city." />
-  <title>Chamber of Commerce Directory</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aruzhan Abilmazhin" />
+    <meta name="description" content="Chamber of Commerce member directory for the city." />
+    <title>Chamber of Commerce Directory</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-  <!-- Facebook Open Graph meta -->
-  <meta property="og:title" content="Chamber of Commerce Directory" />
-  <meta property="og:description" content="Explore our city’s business members in our Chamber directory." />
-  <meta property="og:image" content="images/chamber-og-image.png" />
-  <meta property="og:url" content="https://chamber/directory.html" />
-  <meta property="og:type" content="website" />
+    <!-- Facebook Open Graph meta -->
+    <meta property="og:title" content="Chamber of Commerce Directory" />
+    <meta property="og:description" content="Explore our city’s business members in our Chamber directory." />
+    <meta property="og:image" content="images/chamber-og-image.png" />
+    <meta property="og:url" content="https://chamber/directory.html" />
+    <meta property="og:type" content="website" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
 
 </head>
+
 <body>
 
-<header>
-  <h1>City Chamber of Commerce</h1>
-  <nav>
-    <ul class="main-nav">
-      <li><a href="directory.html" class="active">Directory</a></li>
-      <li><a href="join.html">Join</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <header>
+        <h1>City Chamber of Commerce</h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-  <section class="view-toggle">
-    <button id="gridViewBtn" aria-pressed="true">Grid View</button>
-    <button id="listViewBtn" aria-pressed="false">List View</button>
-  </section>
+    <main>
+        <section class="view-toggle">
+            <button id="gridViewBtn" aria-pressed="true">Grid View</button>
+            <button id="listViewBtn" aria-pressed="false">List View</button>
+        </section>
 
-  <section id="membersContainer" class="grid-view">
-    <!-- Members will be dynamically loaded here -->
-  </section>
-</main>
+        <section id="membersContainer" class="grid-view">
+            <!-- Members will be dynamically loaded here -->
+        </section>
+    </main>
 
-<footer>
-  <p>Contact us: info@citychamber.kz | (999) 123-4567</p>
-  <p>Developed by Aruzhan Abilmazhin | WDD 231</p>
-  <p>Last modified: <span id="lastModified"></span></p>
-  <p>© <span id="currentYear"></span> City Chamber of Commerce</p>
-</footer>
+    <footer>
+        <p>Contact us: info@citychamber.kz | (999) 123-4567</p>
+        <p>Developed by Aruzhan Abilmazhin | WDD 231</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+        <p>© <span id="currentYear"></span> City Chamber of Commerce</p>
+    </footer>
 
-<script src="js/directory.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 
 </body>
+
 </html>
