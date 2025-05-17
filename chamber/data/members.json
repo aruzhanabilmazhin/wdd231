@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Sunrise Bakery",
+      "address": "123 Main St, Springfield",
+      "phone": "(555) 101-2020",
+      "website": "https://sunrisebakery.example",
+      "image": "bakery.png",
+      "membership": 3,
+      "description": "Award-winning bakery specializing in artisan breads and pastries."
+    },
+    {
+      "name": "Tech Solutions LLC",
+      "address": "456 Tech Blvd, Springfield",
+      "phone": "(555) 303-4040",
+      "website": "https://techsolutions.example",
+      "image": "tech.png",
+      "membership": 2,
+      "description": "Innovative IT and software development company."
+    },
+    {
+      "name": "Green Garden Nursery",
+      "address": "789 Garden Ln, Springfield",
+      "phone": "(555) 505-6060",
+      "website": "https://greengarden.example",
+      "image": "garden.png",
+      "membership": 1,
+      "description": "Family-owned nursery with a variety of plants and gardening supplies."
+    },
+    {
+      "name": "Bright Star Fitness",
+      "address": "321 Fitness Rd, Springfield",
+      "phone": "(555) 707-8080",
+      "website": "https://brightstarfitness.example",
+      "image": "fitness.png",
+      "membership": 3,
+      "description": "State-of-the-art gym and wellness center."
+    },
+    {
+      "name": "Cafe Aroma",
+      "address": "654 Coffee St, Springfield",
+      "phone": "(555) 909-1010",
+      "website": "https://cafearoma.example",
+      "image": "cafe.png",
+      "membership": 2,
+      "description": "Cozy cafe with premium coffee and homemade desserts."
+    },
+    {
+      "name": "Urban Books",
+      "address": "987 Book Rd, Springfield",
+      "phone": "(555) 112-1314",
+      "website": "https://urbanbooks.example",
+      "image": "books.png",
+      "membership": 1,
+      "description": "Independent bookstore with a wide selection of genres."
+    },
+    {
+      "name": "Creative Designs",
+      "address": "159 Art Ave, Springfield",
+      "phone": "(555) 151-6171",
+      "website": "https://creativedesigns.example",
+      "image": "design.png",
+      "membership": 3,
+      "description": "Graphic design and branding studio."
+    }
+  ]
+  
