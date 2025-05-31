@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aruzhan Abilmazhin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Join the Chamber of Commerce</h1>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html">
+            <label>First Name:
+                <input type="text" name="firstname" title="First Name" autocomplete="given-name" required>
+            </label>
+            <label>Last Name:
+                <input type="text" name="lastname" title="Last Name" autocomplete="family-name" required>
+            </label>
+            <label>Organization Title:
+                <input type="text" name="orgtitle" title="Organization Title" autocomplete="organization-title"
+                    pattern="[A-Za-z\-\s]{7,}">
+            </label>
+            <label>Email:
+                <input type="email" name="email" title="Email" autocomplete="email" required
+                    placeholder="example@example.com">
+            </label>
+            <label>Mobile Phone:
+                <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+            </label>
+            <label>Business/Organization Name:
+                <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+            </label>
+            <label>Membership Level:
+                <select name="membership" title="Membership Level">
+                    <option value="NP">NP Membership (Free)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>Description:
+                <textarea name="description" title="Business Description"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Submit Application">
+        </form>
+
+        <section class="membership-cards">
+            <div class="card">
+                <h2>NP Membership</h2>
+                <a href="#" onclick="openModal('modal-np')">View Benefits</a>
+            </div>
+            <div class="card">
+                <h2>Bronze Membership</h2>
+                <a href="#" onclick="openModal('modal-bronze')">View Benefits</a>
+            </div>
+            <div class="card">
+                <h2>Silver Membership</h2>
+                <a href="#" onclick="openModal('modal-silver')">View Benefits</a>
+            </div>
+            <div class="card">
+                <h2>Gold Membership</h2>
+                <a href="#" onclick="openModal('modal-gold')">View Benefits</a>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div id="modal-np" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-np')">&times;</span>
+                <h3>NP Membership Benefits</h3>
+                <p>Includes access to community events and newsletters.</p>
+            </div>
+        </div>
+        <div id="modal-bronze" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-bronze')">&times;</span>
+                <h3>Bronze Membership Benefits</h3>
+                <p>All NP benefits + business directory listing.</p>
+            </div>
+        </div>
+        <div id="modal-silver" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-silver')">&times;</span>
+                <h3>Silver Membership Benefits</h3>
+                <p>All Bronze benefits + event discounts and promotions.</p>
+            </div>
+        </div>
+        <div id="modal-gold" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-gold')">&times;</span>
+                <h3>Gold Membership Benefits</h3>
+                <p>All Silver benefits + homepage spotlight and custom training sessions.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Chamber of Commerce</p>
+    </footer>
+</body>
+
+</html>
