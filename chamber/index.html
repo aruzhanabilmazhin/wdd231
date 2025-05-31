@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aruzhan Abilmazhin" />
+    <meta name="description" content="Welcome to the Teton Chamber of Commerce">
+    <title>Home | Teton Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/chamber.css" />
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Teton Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Teton mountains and town" class="hero-img">
+            <div class="hero-content">
+                <h2>Strengthening Local Business</h2>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>June 10:</strong> Networking Night @ Teton Hall</li>
+                <li><strong>June 15:</strong> Summer BBQ Fundraiser</li>
+                <li><strong>June 20:</strong> Farmers & Makers Market</li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <p><span id="weather-temp"></span>°C - <span id="weather-desc"></span></p>
+            <h3>3-Day Forecast</h3>
+            <ul id="forecast-list"></ul>
+        </section>
+
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Teton Chamber of Commerce | All rights reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
