@@ -1,0 +1,40 @@
+/* styles.css */
+
+/* Basic color scheme styles applied to this document */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6; /* Light teal */
+  color: #1a1a1a; /* Very dark gray for text */
+  margin: 2rem;
+  line-height: 1.6;
+}
+h1, h2, h3 {
+  color: #0a5f66; /* Dark teal */
+}
+header {
+  border-bottom: 3px solid #0a5f66;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(10, 95, 102, 0.15);
+}
+ul {
+  padding-left: 1.2rem;
+}
+.wireframe-box {
+  border: 2px dashed #0a5f66;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  background-color: #e7f0f0;
+}
+/* Use color accent for important text */
+.accent {
+  color: #0a5f66;
+  font-weight: 600;
+}
