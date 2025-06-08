@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Grand Teton National Park",
+    "image": "images/teton.jpg",
+    "address": "Moose, WY 83012",
+    "description": "Explore breathtaking landscapes and wildlife in one of America’s premier national parks."
+  },
+  {
+    "title": "Jackson Hole Town Square",
+    "image": "images/jackson_square.jpg",
+    "address": "Jackson, WY 83001",
+    "description": "Visit the iconic elk antler arches and shop local art and souvenirs."
+  },
+  {
+    "title": "National Elk Refuge",
+    "image": "images/elk_refuge.jpg",
+    "address": "Jackson, WY 83001",
+    "description": "See herds of elk in their natural winter habitat just minutes from downtown."
+  },
+  {
+    "title": "Teton Science Schools",
+    "image": "images/teton_science.jpg",
+    "address": "700 Coyote Canyon Rd, Jackson, WY 83001",
+    "description": "Educational programs and field science experiences for all ages."
+  },
+  {
+    "title": "Snow King Mountain",
+    "image": "images/snow_king.jpg",
+    "address": "402 E Snow King Ave, Jackson, WY 83001",
+    "description": "Year-round mountain fun with skiing, hiking, and ziplining."
+  },
+  {
+    "title": "Teton County Library",
+    "image": "images/library.jpg",
+    "address": "125 Virginian Ln, Jackson, WY 83001",
+    "description": "A beautiful community library offering books, events, and quiet space."
+  },
+  {
+    "title": "Jackson Hole Rodeo",
+    "image": "images/rodeo.jpg",
+    "address": "447 Snow King Ave, Jackson, WY 83001",
+    "description": "Experience authentic Western rodeo every summer week."
+  },
+  {
+    "title": "Center for the Arts",
+    "image": "images/arts_center.jpg",
+    "address": "240 S Glenwood St, Jackson, WY 83001",
+    "description": "Enjoy live performances, gallery exhibits, and art workshops."
+  }
+]
