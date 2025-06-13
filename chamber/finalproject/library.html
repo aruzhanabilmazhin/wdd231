@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library | Book Explorer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/library.js" defer></script> <!-- Loads the JS logic for displaying books -->
+</head>
+
+<body>
+    <header>
+        <h1>📚 Book Explorer</h1>
+        <nav>
+            <!-- Navigation menu -->
+            <a href="index.html">Home</a>
+            <a href="library.html" class="active">Library</a>
+            <a href="tracker.html">Tracker</a>
+            <a href="recommendations.html">Recommendations</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Library</h2>
+        <!-- Book list will be populated dynamically -->
+        <section id="library-list" aria-live="polite">
+            <p>Loading books...</p>
+            <!-- Book cards will be inserted here by JavaScript from library.js -->
+        </section>
+    </main>
+
+    <footer>
+    <p>&copy; 2025 Aruzhan Abilmazhin | Book Explorer</p>
+  </footer>
+
+
+</body>
+
+</html>

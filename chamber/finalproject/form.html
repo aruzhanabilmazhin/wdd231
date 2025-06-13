@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Book Explorer</title>
+  <meta name="author" content="Aruzhan Abilmazhin" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Book Explorer</h1>
+    <nav>
+      <button id="hamburger" aria-label="Toggle navigation menu">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="tracker.html">Tracker</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="form.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Contact Us / Add Notes</h2>
+      <form action="form-action-response.html" method="POST" id="contact-form">
+        <label for="name">Name (required):</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email (required):</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message or Notes:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Share your thoughts, book suggestions, or feedback..."></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aruzhan Abilmazhin | Book Explorer</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
