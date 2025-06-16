@@ -2,85 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Aruzhan Abilmazhin" />
-    <meta name="description" content="Track and explore your favorite books with Book Explorer & Reading Tracker." />
-    <title>Book Explorer & Reading Tracker | Home</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Aruzhan Abilmazhin" />
+  <meta name="description" content="Track and explore your favorite books with Book Explorer & Reading Tracker." />
+  <title>Book Explorer & Reading Tracker | Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>📖 Book Explorer & Reading Tracker</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="bookdetails.html">Book Details</a>
-            <a href="form.html">Add a Book</a>
-            <a href="form-action-response.html">Confirm</a>
-        </nav>
-    </header>
+  <header>
+    <h1>📖 Book Explorer & Reading Tracker</h1>
+    <nav>
+      <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="bookdetails.html">Book Details</a></li>
+        <li><a href="form.html">Add a Book</a></li>
+        <li><a href="form-action.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <!-- Welcome -->
-        <section>
-            <h2>Welcome, Reader!</h2>
-            <p>Track your reading, build your digital library, and get custom recommendations for your next great read.
-            </p>
-        </section>
+  <main>
+    <!-- Welcome -->
+    <section>
+      <h2>Welcome, Reader!</h2>
+      <p>Track your reading, build your digital library, and get custom recommendations for your next great read.</p>
+    </section>
 
-        <!-- 📚 Library -->
-        <section id="library">
-            <h2>📚 My Library</h2>
-            <div class="book-grid">
-                <div class="card">
-                    <h3>The Hobbit</h3>
-                    <p>by J.R.R. Tolkien</p>
-                    <p>Status: Completed</p>
-                </div>
-                <div class="card">
-                    <h3>To Kill a Mockingbird</h3>
-                    <p>by Harper Lee</p>
-                    <p>Status: In Progress</p>
-                </div>
-                <div class="card">
-                    <h3>1984</h3>
-                    <p>by George Orwell</p>
-                    <p>Status: To Read</p>
-                </div>
-            </div>
-        </section>
+    <!-- 📚 Library -->
+    <section id="library">
+      <h2>📚 My Library</h2>
+      <div class="book-grid">
+        <div class="card">
+          <h3>The Hobbit</h3>
+          <p>by J.R.R. Tolkien</p>
+          <p>Status: Completed</p>
+        </div>
+        <div class="card">
+          <h3>To Kill a Mockingbird</h3>
+          <p>by Harper Lee</p>
+          <p>Status: In Progress</p>
+        </div>
+        <div class="card">
+          <h3>1984</h3>
+          <p>by George Orwell</p>
+          <p>Status: To Read</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- ✅ Reading Tracker -->
-        <section id="tracker">
-            <h2>✅ Reading Tracker</h2>
-            <ul class="tracker-list">
-                <li><strong>The Hobbit</strong> – 304/304 pages ✅</li>
-                <li><strong>Mockingbird</strong> – 145/281 pages 📖</li>
-                <li><strong>1984</strong> – 0/328 pages 🕓</li>
-            </ul>
-        </section>
+    <!-- ✅ Reading Tracker -->
+    <section id="tracker">
+      <h2>✅ Reading Tracker</h2>
+      <ul class="tracker-list">
+        <li><strong>The Hobbit</strong> – 304/304 pages ✅</li>
+        <li><strong>Mockingbird</strong> – 145/281 pages 📖</li>
+        <li><strong>1984</strong> – 0/328 pages 🕓</li>
+      </ul>
+    </section>
 
-        <!-- 🤖 Recommendations -->
-        <section id="recommendations">
-            <h2>🤖 Recommendations for You</h2>
-            <div class="recommend-grid">
-                <div class="card">
-                    <h3>Brave New World</h3>
-                    <p>by Aldous Huxley</p>
-                    <p>Because you liked: 1984</p>
-                </div>
-                <div class="card">
-                    <h3>The Fellowship of the Ring</h3>
-                    <p>by J.R.R. Tolkien</p>
-                    <p>Because you liked: The Hobbit</p>
-                </div>
-            </div>
-        </section>
-    </main>
- <footer>
-    <p>&copy; 2025 Aruzhan Abilmazhin | Book Explorer|https://youtu.be/_RDIcKCBTxo</p>
+    <!-- 🤖 Recommendations -->
+    <section id="recommendations">
+      <h2>🤖 Recommendations for You</h2>
+      <div class="recommend-grid">
+        <div class="card">
+          <h3>Brave New World</h3>
+          <p>by Aldous Huxley</p>
+          <p>Because you liked: 1984</p>
+        </div>
+        <div class="card">
+          <h3>The Fellowship of the Ring</h3>
+          <p>by J.R.R. Tolkien</p>
+          <p>Because you liked: The Hobbit</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aruzhan Abilmazhin | Book Explorer | <a href="https://youtu.be/_RDIcKCBTxo" target="_blank" rel="noopener">Video Demo</a></p>
   </footer>
 </body>
 

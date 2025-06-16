@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact – Book Explorer by Aruzhan Abilmazhin</title>
-    <meta name="author" content="Aruzhan Abilmazhin" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – Book Explorer by Aruzhan Abilmazhin</title>
+  <meta name="author" content="Aruzhan Abilmazhin" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/form-handler.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <button id="hamburger" aria-label="Toggle navigation menu">☰</button>
-            <ul id="nav-links" class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="library.html">Library</a></li>
-                <li><a href="recommendations.html">Recommendations</a></li>
-                <li><a href="reading-tracker.html">Reading Tracker</a></li>
-                <li><a href="form-action.html" aria-current="page">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <button id="hamburger" aria-label="Toggle navigation menu">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="reading-tracker.html">Reading Tracker</a></li>
+        <li><a href="form-action.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Contact / Notes Form</h1>
-        <form action="form-action-response.html" method="POST" id="contact-form">
-            <label for="name">Name (required):</label>
-            <input type="text" id="name" name="name" required />
+  <main>
+    <h1>Contact / Notes Form</h1>
 
-            <label for="email">Email (required):</label>
-            <input type="email" id="email" name="email" required />
+    <form id="contact-form">
+      <label for="name">Name <span aria-hidden="true" style="color:red;">*</span></label>
+      <input type="text" id="name" name="name" required />
 
-            <label for="message">Message or Notes:</label>
-            <textarea id="message" name="message" rows="5"></textarea>
+      <label for="email">Email <span aria-hidden="true" style="color:red;">*</span></label>
+      <input type="email" id="email" name="email" required />
 
-            <input type="hidden" id="timestamp" name="timestamp" />
+      <label for="message">Message or Notes:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
 
-            <button type="submit">Send</button>
-        </form>
-    </main>
+      <input type="hidden" id="timestamp" name="timestamp" />
 
-    <footer>
-    <p>&copy; 2025 Aruzhan Abilmazhin | Book Explorer|https://youtu.be/_RDIcKCBTxo</p>
+      <button type="submit">Send</button>
+    </form>
+
+    <section id="confirmation" aria-live="polite" class="hidden"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Aruzhan Abilmazhin | Book Explorer | <a href="https://youtu.be/_RDIcKCBTxo" target="_blank" style="color:white;">Video Demo</a></p>
   </footer>
 </body>
-
 </html>

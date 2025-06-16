@@ -2,7 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("bookModal");
   const closeModal = document.getElementById("modalClose");
 
-  // Sample book data lookup (you’d replace with your own data or fetch from JSON)
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  // Toggle mobile menu
+  hamburger.addEventListener("click", () => {
+    const expanded = hamburger.getAttribute("aria-expanded") === "true";
+    hamburger.setAttribute("aria-expanded", String(!expanded));
+    navLinks.classList.toggle("show");
+  });
+
+  // Sample book data (replace or fetch externally)
   const books = [
     {
       id: "book1",
@@ -12,9 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
       summary: "This is a sample book summary.",
       progress: "50%",
     },
-    // Add more books here or fetch them from books.json
+    // Add more books here
   ];
 
+  // Handle read-more modal logic
   document.body.addEventListener("click", function (e) {
     if (e.target.classList.contains("read-more-btn")) {
       const bookId = e.target.getAttribute("data-id");
@@ -30,10 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Close modal
   closeModal.addEventListener("click", () => {
     modal.style.display = "none";
   });
 
+  // Close modal when clicking outside
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.style.display = "none";

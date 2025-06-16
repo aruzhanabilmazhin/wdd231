@@ -2,37 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Details</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/bookdetails.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Aruzhan Abilmazhin" />
+  <meta name="description" content="Detailed view of your selected book in Book Explorer." />
+  <title>Book Details | Book Explorer</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/bookdetails.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>Book Explorer</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="library.html">Library</a>
-            <a href="tracker.html">Tracker</a>
-            <a href="recommendations.html">Recommendations</a>
-        </nav>
-    </header>
+  <header>
+    <h1>📖 Book Explorer</h1>
+    <nav>
+      <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bookdetails.html" aria-current="page">Book Details</a></li>
+        <li><a href="form.html">Add a Book</a></li>
+        <li><a href="form-action.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <h2>Book Details</h2>
-        <div id="book-info">
-            <p><strong>Title:</strong> <span id="book-title"></span></p>
-            <p><strong>Author:</strong> <span id="book-author"></span></p>
-            <p><strong>Year:</strong> <span id="book-year"></span></p>
-            <p><strong>Notes:</strong> <span id="book-notes"></span></p>
-        </div>
-    </main>
+  <main>
+    <section>
+      <h2>📘 Book Details</h2>
+      <div id="book-info" class="card">
+        <p><strong>Title:</strong> <span id="book-title">Loading...</span></p>
+        <p><strong>Author:</strong> <span id="book-author">Loading...</span></p>
+        <p><strong>Year:</strong> <span id="book-year">Loading...</span></p>
+        <p><strong>Notes:</strong> <span id="book-notes">Loading...</span></p>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Aruzhan Abilmazhin | Book Explorer|https://youtu.be/_RDIcKCBTxo</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Aruzhan Abilmazhin | Book Explorer | 
+      <a href="https://youtu.be/_RDIcKCBTxo" target="_blank" rel="noopener">Video Demo</a>
+    </p>
+  </footer>
 </body>
 
 </html>
